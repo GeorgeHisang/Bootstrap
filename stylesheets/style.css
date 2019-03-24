@@ -1,0 +1,42 @@
+@charset "UTF-8";
+html {
+  font-family: Microsoft JhengHei;
+}
+
+.btn {
+  white-space: nowrap;
+}
+
+a.card:hover {
+  -webkit-transition-property: background;
+  transition-property: background;
+  -webkit-transition-duration: .8s;
+          transition-duration: .8s;
+}
+
+a.card:hover .card-text {
+  color: aliceblue;
+}
+
+a.card:hover:hover {
+  text-decoration: none;
+  background: #7c7a7a;
+}
+
+.news li::before {
+  content: "．";
+}
+
+.news li:first-of-type {
+  margin-left: 10px;
+}
+
+@media screen and (max-width: 560px) {
+  #ad-carousel h1 {
+    font-size: 2rem;
+  }
+  #ad-carousel .btn {
+    margin-top: 0 !important;
+  }
+}
+/*# sourceMappingURL=style.css.map */

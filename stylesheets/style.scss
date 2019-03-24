@@ -1,0 +1,35 @@
+html{
+    font-family:Microsoft JhengHei;
+}
+.btn{
+    white-space: nowrap;
+}
+a.card:hover{
+    .card-text{
+        color: aliceblue;
+    }
+    transition-property: background;
+    transition-duration: .8s;
+    &:hover {
+      text-decoration: none;
+      background: rgb(124, 122, 122);
+    } 
+}
+
+.news{
+    li::before{
+        content:"．";
+    }
+    li:first-of-type{
+        margin-left:10px;
+    }
+}
+
+@media screen and (max-width: 560px) { 
+    #ad-carousel h1 { 
+        font-size: 2rem; 
+    }
+    #ad-carousel .btn {
+         margin-top: 0 !important; 
+    } 
+}
